@@ -1,0 +1,46 @@
+{
+    "registrationNumber":"162hbdh6",
+    "rollNumber":123,
+    "firstName":"Sheikh",
+    "middleName":"hapheej",
+    "lastName":"mansoori",
+    "classNumber":8,
+    "section":"cs",
+    "year":2009,
+    "registrationDate":"02-02-2020",
+    "registrationId":{
+        "registrationNumber":"162hbdh6",
+        "registrationId":"sjf164",
+        "yearlyCount":12345,
+        "year":2021,
+        "registrationDate":"02-02-2020"
+    }
+}
+
+{
+    "kid": "9753",
+    "name": "hapheej",
+    "mobileNumber": 9753,
+    "age":30,
+    "email":"sheikh.itech12@gmail.com",
+    "address": {
+        "placeName":"village bhera",
+        "houseNumber":37,
+        "landmark":"near primary schoool",
+        "postOffice":"bhera",
+        "city":"bhera",
+        "district":"Chhindwara",
+        "state":"MP",
+        "zipCode":480224,
+        "type":"permanent"
+    },
+    "farmDetail":{
+        "khasaraNumber":"asd123mn",
+        "farmArea":"2 acre",
+        "lacation":"village bhera, dis Chhindwara",
+        "pumpFacility":true,
+        "roadForFarm":false,
+        "soilType":"black"
+    }
+}
+git remote add origin https://github.com/sheikh-itech/kisan-ui.git
