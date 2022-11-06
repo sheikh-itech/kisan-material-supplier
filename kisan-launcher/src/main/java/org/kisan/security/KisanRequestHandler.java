@@ -75,6 +75,6 @@ public class KisanRequestHandler extends OncePerRequestFilter {
     {
     	String path = request.getRequestURI();
     	
-    	return path.indexOf("/authenticate")>10;
+    	return (path.indexOf("/kisan")>10 || path.indexOf("/authenticate")>10);
     }
 }

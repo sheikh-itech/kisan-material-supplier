@@ -6,24 +6,21 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.persistence.Transient;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-@Entity
+@Document
 public class UserDetail implements UserDetails {
 
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE)
-	private int userId;
+	private String _id;
 	@Column(unique=true, nullable=false, updatable=false)
 	private String username;
 	private String password;
@@ -103,14 +100,6 @@ public class UserDetail implements UserDetails {
 		return isEnabled;
 	}
 
-	public int getUserId() {
-		return userId;
-	}
-
-	public void setUserId(int userId) {
-		this.userId = userId;
-	}
-
 	public String getRoles() {
 		return roles;
 	}
@@ -153,5 +142,13 @@ public class UserDetail implements UserDetails {
 
 	public void setEnabled(boolean isEnabled) {
 		this.isEnabled = isEnabled;
+	}
+
+	public String get_id() {
+		return _id;
+	}
+
+	public void set_id(String _id) {
+		this._id = _id;
 	}
 }
